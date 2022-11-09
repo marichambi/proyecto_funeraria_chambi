@@ -1,0 +1,118 @@
+
+*{
+	
+	margin: 0px;
+	padding: 0px;
+	outline: 0;
+	box-sizing: border-box;
+
+}
+
+body{
+	background-image: url("../privada/imagenes/uno.jpeg");
+background-image: no-repeat;
+background-image: fixed;
+background-image: center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+	/*background: red url("") no-repeat;/*coloer de pagina general*/
+	font-family: Verdana,Arial,Helvetica, sans-serif;/*tipo de letra del cuerpo*/
+	font-size: 10px;
+	font-weight: bold;
+}
+
+#menu_principal{
+	width: 144px;
+	color: #fff; /*color de la letra de menu*/
+	background-color: #399; /*color de boton donde esta menu principal*/
+	border: solid 1px #fff; /* color del borde*/
+	padding: 8px;
+	position: absolute;
+	margin: 20px;
+	font-size: 0.9em;
+	text-align: center;
+	cursor: pointer; /*convierte al cursor en una mano al pasar por el enlace del boton menu*/
+}
+
+#menu_principal:hover {background-color : #0000CA; /*color al apasar por el boton*/}
+
+#menu_principal:hover #menu{display: block;}
+
+#menu{
+	text-align: center;
+	font-size: 0.85em;
+	width: 320px;
+	display: none;
+	position: relative;
+	padding-top: 10px;
+	left: -9px;
+	margin-bottom: -10px;
+
+}
+
+#menu ul {
+	list-style-type: none;
+	border: 0;
+}
+
+#menu ul li.nivel1{width: 162px;}
+#menu ul li.primera{border-top: solid 1px #fff; }
+#menu ul li a{
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	background-color: #399;
+	border: solid 1px #fff;
+	border-top: none;
+	padding: 8px;
+	position: relative;
+}
+#menu ul li :hover{
+	position: relative;
+	background-color: #6CC;
+	color: #000;
+}
+#menu ul li a:hover,#menu ul li:hover a.nivel1{
+	background-color: #6CC;
+	color: #000;
+	position: relative;
+}
+#menu ul li a.nivel1{
+	display: block!important;
+	display: none;
+	position: relative;
+}
+#columna{
+	margin-right: 400px;
+	float: right;
+	width: 33%;
+	text-align: justify;
+	color: #000; /*color de la letra del formulario*/
+}
+
+#subtitulo2{ /*caracteristicas de los subtitulos por ej formulario 1*/
+	font-family: Tahoma,Geneve,sans-serif;
+	font-size: 25px;
+	color: #000;
+}
+
+.ubi_boton{
+	width: 450px;
+	height: 30px;
+	margin-left: 80px;
+
+}
+
+.boton{
+	border-radius: 17px;
+	font-weight: bold;
+	width: 90px;
+	height: 25px;
+}
+.recuadro{
+	border: 2px solid #ffffff;
+	padding: 7px;
+	width: 300px;
+}

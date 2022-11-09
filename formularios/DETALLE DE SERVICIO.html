@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu Formularios</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+  <script type="text/javascript" src="js/expresiones_regulares.js"></script>
+  <script type="text/javascript" src="js/validacion_servicio_detalle.js"></script>
+  <link rel="stylesheet" type="text/css" href="../calendario/tcal.css"/>
+  <link href="../css/business-casual.min.css" rel="stylesheet">
+</head>
+<body>
+  <form name="formu" action="" method="post" enctype="multipart/from-data">
+</head>
+<body>
+  <br><br>
+  <header>
+  	<h1>BALNEARIO LA CANDELARIA</h1>
+  </header>
+ 	<nav id="principal">Menú principal     
+    <div id="menu">
+ <ul>
+        <li class="nivel1">
+          <a href="Datos PERSONALES DEL EMPLEADO.html" class="nivel1">Datos PERSONALES DEL EMPLEADO</a>
+        </li>
+         <li class="nivel1">
+          <a href="FUNCION DEL EMPLEADO.HTML" class="nivel1">FUNCION DEL EMPLEADO</a>           
+        </li>
+        <li class="nivel1">
+          <a href="ALQUILER_LOCAL.html" class="nivel1">ALQUILER_LOCAL</a>          
+        </li>
+        <li class="nivel1">
+          <a href="BALNEARIO LA CANDELARIA.html" class="nivel1">BALNEARIO LA CANDELARIA</a>          
+        </li>
+        <li class="nivel1">
+          <a href="Datos PERSONALES DEL CLIENTE.HTML" class="nivel1">Datos PERSONALES DEL CLIENTE</a>           
+        </li>
+        <li class="nivel1">
+          <a href="PRODUCTO.HTML" class="nivel1">PRODUCTO</a>           
+        </li>
+        <li class="nivel1">
+          <a href="TIPOS DE PRODUCTO.HTML" class="nivel1">TIPOS DE PRODUCTO</a>           
+        </li>
+         <li class="nivel1">
+          <a href="PROMOCION.HTML" class="nivel1">PROMOCION</a>           
+        </li>
+        <li class="nivel1">
+          <a href="SERVICIO_CLIENTE.HTML" class="nivel1">SERVICIO_CLIENTE</a>           
+        </li>
+          <li class="nivel1">
+          <a href="DETALLE DE SERVICIO.HTML" class="nivel1">DETALLE DE SERVICIO</a>           
+        </li>
+     </ul>
+     
+        
+      </div>
+    </nav>
+    <br><br>
+    <!--AQUI VA EL CODIGO PARA LOS FORMULARIOS--> 
+    <section id="columna">          
+      <header id="subtitulo2">DETALLE DE SERVICIO</header>
+      <form action="dos.html">
+        <table  border="1" >
+          <tr>
+            <td>
+              <table border="0">
+                
+                <tr>
+                  <td>Servicio:</td><td><input name="servicio" type="text" size="20"  maxlength="15"   onkeyup="this.value=this.value.toUpperCase()"></td>
+                </tr>
+               
+                 <tr>
+                  <td>Cantidad:</td>
+                  <td><input name="cantidad" type="text" size="20"  maxlength="15"   onkeyup="this.value=this.value.toUpperCase()"></td>
+                </tr>  
+                <td>Monto Total:</td><td><input name="monto" type="text" size="20"  maxlength="15"   onkeyup="this.value=this.value.toUpperCase()"></td>
+                 </tr> 
+                
+                <tr>
+               <td align="center" colspan="2">
+                <input type="button" name="guardar" value="Guardar" onclick="validar()">
+      
+                <input type="reset" value="Cancelar" name="boton2">
+                </td>
+              </tr>
+              <tr>
+               <td align="center" class="obligatorio">
+                DEBES LLENAR TODOS LOS CAMPOS
+                </td>
+              </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </form>  
+  </section>  
+</body>
+</html>
